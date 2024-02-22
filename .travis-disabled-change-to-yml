@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - '16.13.1'
+sudo: false
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - node_modules
+
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  keep-history: true
+  api-key:
+    secure: b39G3NPhucWWSgYOLOLTqT4Q23xUrxZ7fO/DwZVz0S53xtccw4m56pPsa9D+LXD0BdUYHjHgpRT0uE8GQamjT3zuUo6pwJ+uvE9O6IctmohH+bIpwWS3jQdztQS41jDdEBd1qCaimUcgEbs9/bZ8fLmpZW/8Ym2TkyBYEWLoudznSryOkm3vqUpbY3jNK7c2S+TDbOjB40lip2Un965+kBiviPERCdq+FvPxUrLbtxPS2Gl4BG0ab+HxOV/qseOKgCRelfqVk7+DC8qVGiZBYfvyKA72wVsBeVSRmtWG/S4btdoRYX2IgtOiZS8lIhj+tcaGQVVJbwSUYnJ2MFFeeLiI8zoGheeM+AW543gMVcgCp+p0ljcBU7uuhJ4pgEwWWWirKsJtKYmdiTZjYCm7Azmfe4/TZgcEhmvF6iGs2PyxOID+2x+1+IiZCGfIO/HsIRgrTFvJZX6AOlLBYrdRo7JLX/AlWLiaYh7yAM/inrPVoDIOXvJxvhOyMxOT1Re2uoaZZ919gKpFRdalgF/rcYy6dDoLLYYDvnpEOlbqMX2CP58wBLj8pRZaVFXn1t20O4zM+z8hqGH027noxKR2pWyqJbXoeE4t7RqKyyYNjcVFb8ifUvQgFxJplPMK8NXpfJLwTlRtQklJ3DeaoeWZHHQEr2rHzIuHVpTrlOguTDg=
+  app: game-store-angular

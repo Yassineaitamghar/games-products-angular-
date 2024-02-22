@@ -1,0 +1,64 @@
+/* home.component.css or home.component.scss */
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .image-container {
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures the image does not overflow the container */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    animation: fadeIn 3s ease-out; /* Example animation: fadeIn over 3 seconds */
+  }
+  
+  .jumbotron {
+    margin-bottom: 0; /* Remove the default margin of the jumbotron */
+  }
+  
+  h1 {
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  h1 span {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  h1:hover span:nth-child(1) {
+    transform: translateX(20px);
+  }
+  
+  h1:hover span:nth-child(2) {
+    transform: translateX(-20px);
+  }
+  
+  .pink-text {
+    color: #ff66b2; /* Pink color */
+  }
+  
+  .black-text {
+    color: #000000; /* Black color */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
