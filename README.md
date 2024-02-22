@@ -21,9 +21,9 @@ _Note: The demo websites may be slow when you access them for the first time. Be
 
 Setup server to host RESTful API with Spring Boot or ASP.NET Core, see below.
 
-- https://github.com/jojozhuang/game-store-springboot
-- https://github.com/jojozhuang/restful-api-springboot
-- https://github.com/jojozhuang/restful-api-aspnet
+- https://github.com/Yassineaitamghar/games-products-angular-.git
+- https://github.com/Yassineaitamghar/games-products-angular-.git
+- https://github.com/Yassineaitamghar/games-products-angular-.git
 
 ## 2. Angular App
 
